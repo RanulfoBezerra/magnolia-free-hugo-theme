@@ -1,0 +1,69 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Magnolia Demo"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+
+[params]
+  subtitle = "Demo site"
+  [params.homepage]
+    preTitle = "Welcome to"
+    title = "Magnolia"
+    intro = "This is a minimal demo of the Magnolia theme."
+    mainButton = "Learn More"
+    mainButtonRef = "#"
+    secondButton = "Contact"
+    secondButtonRef = "/pages/office/"
+    blogTitle = "Latest Posts"
+    blogButton = "All Posts"
+  [params.office]
+    title = "Our Office"
+    description = "Visit us!"
+    buttonText = "Get Directions"
+    buttonLink = "#"
+    mapLink = "https://www.openstreetmap.org"
+  [params.services]
+    title = "Services"
+    description = "What we offer"
+    [[params.services.list]]
+      title = "Service One"
+      description = "First service"
+    [[params.services.list]]
+      title = "Service Two"
+      description = "Second service"
+  [params.socials]
+    enabled = true
+    callToAction = "Follow us"
+    [[params.socials.link]]
+      name = "twitter"
+      link = "https://twitter.com"
+    [[params.socials.link]]
+      name = "github"
+      link = "https://github.com"
+  [params.footer]
+    extradescription1 = "Demo Company"
+    extraDescription2 = "All rights reserved"
+    [params.footer.navigate]
+      heading = "Menu"
+    [params.footer.contacts]
+      enabled = true
+      heading = "Contact"
+      address = "123 Demo Street"
+      mail = "info@example.com"
+  [params.schedules]
+    enabledFooter = false
+    days = []
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Services"
+    url = "/pages/services/"
+    weight = 2
+  [[menu.main]]
+    name = "Office"
+    url = "/pages/office/"
+    weight = 3
